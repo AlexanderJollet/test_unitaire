@@ -1,29 +1,30 @@
-<?php 
-    class Calculatrice {
-        public function __construct()
-        {
-            
-        }
-    
-        public function add($a = 5, $b = 5){
-           $c =  $a + $b;
-           return $c;
-        }
+<?php
 
-        public function sous($a = 5, $b = 5){
-            $c =  $a - $b;
-            return $c;
-        }
+class Calculatrice {
+    public function __construct()
+    {
         
-        public function multi($a = 5, $b = 5){
-            $c =  $a * $b;
-            return $c;
-        }
-
-        public function div($a = 5, $b = 5){
-            $c =  $a / $b;
-            return $c;
-        }
     }
+
+    public function add($a, $b) 
+    {
+        return $a + $b;
+    }
+
+    public function sub($a, $b) 
+    {
+        return $a - $b;
+    }
+
+    public function mul($a, $b) 
+    {
+        return $a * $b;
+    }
+
+    public function div($a, $b) 
+    {
+        return $a / $b;
+    }
+}
 
 ?>
